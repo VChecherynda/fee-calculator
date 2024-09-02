@@ -13,7 +13,7 @@ describe('convertPercents', () => {
         expect(convertPercents(100, '0.3')).toEqual(undefined);
     });
 
-    test('should return percent from amount ', () => {
+    test('should return percent from amount', () => {
         expect(convertPercents(100, 0.3)).toEqual(0.3);
         expect(convertPercents(200, 0.3)).toEqual(0.6);
     });

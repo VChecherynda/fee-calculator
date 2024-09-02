@@ -3,7 +3,7 @@ const {
     transitionsCashOut,
     cashOutNaturalConfig,
     cashOutJuridicalConfig,
-} = require('../__mocks__');
+} = require('../mocks');
 
 describe('cashOutForLegal', () => {
     test('should return fee if amount is bigger than config min amount', () => {

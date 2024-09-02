@@ -11,7 +11,7 @@ more specific
 
 ### Layers:
 
-1. **mocks** ( for testing purpose )
+1. mocks ( for testing purpose )
 2. api ( for fetching )
 3. controllers ( make common block of structure )
 4. services ( work with specific functionality )
@@ -36,4 +36,8 @@ more specific
 
 ## Test
 
-1. Just run `npm test`
+1. Just run `npm run test`
+
+## Lint
+
+1. Just run `npm run lint`

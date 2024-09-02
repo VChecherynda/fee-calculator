@@ -13,7 +13,7 @@ const {
     cashOutJuridicalConfig,
     transitionsCashIn,
     transitionsCashOut,
-} = require('./__mocks__');
+} = require('./mocks');
 
 jest.mock('./api');
 jest.mock('./helpers/input');

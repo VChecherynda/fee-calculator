@@ -1,5 +1,5 @@
 const { cashIn } = require('./cash-in');
-const { cashInConfig } = require('../__mocks__');
+const { cashInConfig } = require('../mocks');
 
 describe('cashIn', () => {
     test('should return fee if amount is bigger than max amount', () => {

@@ -34,7 +34,7 @@ describe('cashOutCommission', () => {
             data,
         });
 
-        expect(service.cashOutForLegal).toBeCalledWith({
+        expect(service.cashOutForLegal).toHaveBeenCalledWith({
             amount: 100,
             config: { min: { amount: 0.5 }, percents: 0.3 },
         });
@@ -67,7 +67,7 @@ describe('cashOutCommission', () => {
             data,
         });
 
-        expect(service.cashOutForNatural).toBeCalledWith({
+        expect(service.cashOutForNatural).toHaveBeenCalledWith({
             amount: 100,
             config: { percents: 0.3, week_limit: { amount: 1000 } },
             data: { userId: '1', userType: 'natural' },

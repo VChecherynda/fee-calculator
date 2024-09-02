@@ -20,7 +20,7 @@ describe('cashInCommission', () => {
 
         cashInCommission({ amount: 100, configs, service });
 
-        expect(service.cashIn).toBeCalledWith({
+        expect(service.cashIn).toHaveBeenCalledWith({
             amount: 100,
             configs: { max: { amount: 1000 } },
         });
