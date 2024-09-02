@@ -1,0 +1,26 @@
+{
+    "name": "task_fees",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "bash run.sh",
+        "test": "jest",
+        "lint": "eslint ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.9.1",
+        "eslint": "^8.57.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.29.1",
+        "globals": "^15.9.0",
+        "jest": "^29.7.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.5",
+        "date-fns": "^3.6.0",
+        "dotenv": "^16.4.5"
+    }
+}
