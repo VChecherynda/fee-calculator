@@ -1,6 +1,6 @@
-const { readInputFile } = require('./input');
-const { printOutput } = require('./output');
-const { fetchConfig } = require('./config');
+const { readInputFile } = require('./helpers/input');
+const { printOutput } = require('./helpers/output');
+const { fetchConfig } = require('./api');
 
 const cashInCommission = require('./controllers/cash-in-commission');
 const cashOutCommission = require('./controllers/cash-out-commission');
@@ -15,9 +15,9 @@ const {
     transitionsCashOut,
 } = require('./__mocks__');
 
-jest.mock('./input');
-jest.mock('./config');
-jest.mock('./output');
+jest.mock('./api');
+jest.mock('./helpers/input');
+jest.mock('./helpers/output');
 jest.mock('./controllers/cash-in-commission');
 jest.mock('./controllers/cash-out-commission');
 jest.mock('./services/cash-in');

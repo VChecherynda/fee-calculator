@@ -1,6 +1,6 @@
-const { readInputFile } = require('./input');
-const { printOutput } = require('./output');
-const { fetchConfig } = require('./config');
+const { readInputFile } = require('./helpers/input');
+const { printOutput } = require('./helpers/output');
+const { fetchConfig } = require('./api');
 
 const cashInCommission = require('./controllers/cash-in-commission');
 const cashOutCommission = require('./controllers/cash-out-commission');
@@ -8,7 +8,7 @@ const cashOutCommission = require('./controllers/cash-out-commission');
 const cashInService = require('./services/cash-in');
 const cashOutService = require('./services/cash-out');
 
-const { ALLOWED_CURRENCY } = require('./constants/currency');
+const { ALLOWED_CURRENCY } = require('./helpers/constants/currency');
 
 async function main(filePath) {
     const transactions = readInputFile(filePath);

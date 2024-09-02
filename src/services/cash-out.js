@@ -1,7 +1,7 @@
-const { getWeekKey } = require('../utils/date-utils');
-const { roundUp } = require('../utils/rounding');
-const { convertToCents, convertToEur } = require('../utils/convertors');
-const { convertPercents } = require('../utils/percent');
+const { getWeekKey } = require('../helpers/utils/date-utils');
+const { roundUp } = require('../helpers/utils/rounding');
+const { convertToCents, convertToEur } = require('../helpers/utils/convertors');
+const { convertPercents } = require('../helpers/utils/percent');
 
 function cashOutForLegal({ amount, config }) {
     if (amount && config) {
